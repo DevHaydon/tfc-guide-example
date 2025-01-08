@@ -16,22 +16,4 @@ variable "instance_name" {
   default     = "Provisioned by Terraform"
 }
 
-terraform {
 
-  cloud {
-    organization = "groundcontrol"
-
-    workspaces {
-      name = "learn-terraform"
-    }
-  }
-
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.28.0"
-    }
-  }
-
-  required_version = ">= 1.1.0"
-}
