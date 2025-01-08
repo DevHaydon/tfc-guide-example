@@ -1,5 +1,5 @@
 terraform {
-
+/*
   cloud {
     organization = "groundcontrol
 
@@ -7,7 +7,7 @@ terraform {
       name = "tfc-guide-example"
     }
   }
-
+*/
   required_providers {
     aws = {
       source  = "hashicorp/aws"
